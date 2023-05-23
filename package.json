@@ -27,13 +27,11 @@
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.4"
   },
-  "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
-  },
   "engines": {
     "node": ">=14",
     "npm": ">=8"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
