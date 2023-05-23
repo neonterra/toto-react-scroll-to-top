@@ -1,0 +1,38 @@
+{
+  "name": "toto-react-scroll-to-top",
+  "version": "1.0.0",
+  "description": "A simple button to scroll the webapp or website to move to top",
+  "main": "dist/index.js",
+  "author": "neonterra",
+  "keywords": [
+    "react",
+    "typescript",
+    "npm"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "~2.66",
+    "rollup-plugin-sass": "^1.12.19",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=8"
+  },
+  "files": ["dist"]
+}
