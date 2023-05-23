@@ -8,7 +8,11 @@
   "keywords": [
     "react",
     "typescript",
-    "npm"
+    "npm",
+    "react-component",
+    "toto-react",
+    "toto-scroll-to-top",
+    "scroll-to-top"
   ],
   "scripts": {
     "build": "rollup -c",
