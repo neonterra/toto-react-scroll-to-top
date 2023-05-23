@@ -1,40 +1,27 @@
 import * as React from 'react'
 import './styles.scss'
 
-const { useState, useEffect } = React
-
-const Counter: React.FC<{
-  count: number
-  className: string
-}> = ({ count, className }) => (
-  <div className={`counter ${className}`}>
-    <p
-      key={count}
-      className={`counter__count ${className ? className + '__count' : ''}`}
-    >
-      {count}
-    </p>
-  </div>
-)
+const {  } = React
 
 export type ICounterProps = {
-  className?: string
+  className?: string,
+  position?: string
 }
 
-const App: React.FC<ICounterProps> = ({ className = '' }) => {
-  const [count, setCount] = useState(0)
+const App: React.FC<ICounterProps> = ({ className = '' , position = 'right'}) => {
+  
+    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+        event.preventDefault();
+        window.scroll({top: 0, behavior: "smooth"})
+    };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (count > 99) return setCount(0)
-
-      setCount(count + 1)
-    }, 1000)
-
-    return () => clearInterval(interval)
-  }, [count, setCount])
-
-  return <Counter className={className} count={count} />
+    return (
+        <div className={`toto-top-button  x ${position} ${className}`} onClick={handleClick}  >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+            </svg>
+        </div>
+    )
 }
 
 export default App

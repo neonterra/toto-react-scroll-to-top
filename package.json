@@ -4,6 +4,7 @@
   "description": "A simple button to scroll the webapp or website to move to top",
   "main": "dist/index.js",
   "author": "neonterra",
+  "repository": "neonterra/toto-react-scroll-to-top",
   "keywords": [
     "react",
     "typescript",
