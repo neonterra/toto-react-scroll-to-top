@@ -1,6 +1,6 @@
 {
   "name": "toto-react-scroll-to-top",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple button to scroll the webapp or website to move to top",
   "main": "dist/index.js",
   "author": "neonterra",
